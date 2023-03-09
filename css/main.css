@@ -1,0 +1,127 @@
+body{
+    font-family: 'Helvetica', sans-serif;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding: 32px 0;
+    margin: 48px auto
+}
+
+form {
+    width: 100%;
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 32px;
+    margin: 48px auto;
+    box-sizing: border-box;
+    border: solid #DDD 0.1rem;
+    border-radius: 0.1rem;
+}
+  
+
+h1 {
+    font-family: 'Arial';
+    font-size: 2rem;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid #DDD 0.1rem;
+    border-radius: 0.1rem;
+    padding: 16px;
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    
+}
+
+form label, input[type=text], textarea {
+    width: 100%;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0;
+  }
+  
+form input[type=text], textarea {
+    border: solid #ffffff 0.1rem;
+    border-radius: 0.4rem;
+  }
+  
+form input[type=submit] {
+    width: 100%;
+    margin-top: 16px;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    background-color: #6495ED;
+    color: #FFFFFF;
+  }
+  
+  @media only screen and (max-width: 35rem) {
+    body {
+      line-height: 1.5rem;
+    }
+  
+    form {
+      padding-top: 4rem;
+    }
+    h1 {
+        font-size: 1rem;
+
+  } 
+}
+  
+@media only screen and (min-width: 35rem) and (max-width: 60rem) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .message {
+        grid-column: span 2;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+  } 
+  
+    #submit {
+        grid-column: 1;
+        background-color: #6495ED;
+        padding: 10px;
+    }
+    form {
+        padding-top: 4rem;
+      }    
+  
+    }
+
+  @media only screen and (min-width: 60rem) {
+      .form {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 20px;
+      }
+      .meaasge {
+          grid-column: span 2;
+      }
+    
+      #submit {
+          grid-column: 1;
+          background-color: #6495ED;
+          padding: 10px;
+      }
+      form {
+          padding-top: 4rem;
+        }    
+      
+  }
+
+
+
